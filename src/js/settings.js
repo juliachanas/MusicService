@@ -4,5 +4,6 @@ export const settings = {
       '//' +
       window.location.hostname +
       (window.location.hostname == 'localhost' ? ':3131' : ''),
+    songs: 'songs',
   },
 };
