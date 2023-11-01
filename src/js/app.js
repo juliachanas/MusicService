@@ -1,7 +1,7 @@
 import { settings } from './settings';
 
 const app = {
-  init: function () {
+  initData: function () {
     const url = settings.db.url + '/' + settings.db.songs;
     this.data = {};
     fetch(url)
@@ -11,6 +11,11 @@ const app = {
       .then((parsedResponse) => {
         this.data.songs = parsedResponse;
       });
+  },
+
+  init: function () {
+    const thisApp = this;
+    thisApp.initData();
   },
 };
 
