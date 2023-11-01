@@ -1,1 +1,23 @@
 //TYLE GLOBALNE - NIE DOTYCZĄ AI UKŁADU ANI TEKSTU, ALE MOGĄ BYĆ UŻYWANE W WIELU MIEJSCACH, NP. BUTTONY, KTÓRE WYGLĄDAJĄ IDENTYCZNIE W KILKU SEKCJACH
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  background: $primaryColorBackground;
+  //font-family: $font-text;
+  //font-size: 14px;
+  //line-height: 1.7;
+  //font-weight: $font-normal;
+  color: $primaryColorFonts;
+}
+  
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+  

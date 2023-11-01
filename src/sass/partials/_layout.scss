@@ -1,1 +1,59 @@
 //REGUŁY DOTYCZĄCE UKŁADU STRONY, NP. KLASA CONTAINER, KLASY GRIDOWE ITP.
+
+//HEADER
+.splash {
+  height: 100vh;              /*wysokosc taka jak okno przegladarki*/
+  position: relative;
+  background-image: url('../../images/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  //background-attachment: fixed;  /*okresla czy pozycja obrazu jest stala czy przewija sie*/
+    
+  .container  {
+    position: absolute;         /*wysrodkowany w obu osiach względem rodzica*/
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+}
+
+//GRADIENT-LINE
+
+.gradient-line {
+  height: 450px;              /* Wysokość linii ombre */
+  background: linear-gradient(to top, $primaryColorBackground, transparent); /* Ombre od dołu do góry */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+//NAVIGATION
+
+.main-nav {
+  position: relative;
+  z-index: 2; /* Umieść drugą sekcję nad linią ombre */
+  height: auto;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    a {
+      text-decoration: none;
+      color: $primaryColorFonts;
+    }
+  }
+
+}
+
+.audio{
+  height: 500px;
+  background-color: aqua;
+}
+

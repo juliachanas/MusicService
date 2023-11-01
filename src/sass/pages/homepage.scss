@@ -1,1 +1,77 @@
 //STYLE DLA PODSTRONY HOMEPAGE
+
+//PLAYER SECTION
+
+.audio {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+
+
+
+
+//SUBSCRIBE SECTION
+.subscribe .splash {
+  background-image: url('../../images/subscribe.jpg');
+  //pozycja relative dziedziczona z splash z layoutu
+}
+
+//AUTHOR IMAGE
+.image-author {
+  position: absolute;
+  top: 14%;
+  left: 57%;
+
+  img {
+    max-width: 430px;
+    max-height: 500px;
+  }
+}
+
+.name-author {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    z-index: 2;
+    font-size: 80px;
+
+  .surname{
+      position: absolute;
+      left: 15%;
+      top: 64%;
+
+    span {
+        color: #CF383E;
+    }
+  }
+}
+
+.button-join {
+  position: absolute;
+  left:22%;
+  top: 56%;
+
+  .btn {
+    padding: 16px;
+    font-size: 25px;
+  }
+}
+
+.description{
+  position: absolute;
+  top: 80%;
+  padding-right: 17%;
+
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.sub-title{
+  position: absolute;
+  top: -6%;
+  h2 {
+    font-size: 60px;
+  }
+}

@@ -25,3 +25,16 @@
   src: url("../fonts/SourceSansPro-Regular.eot") format("eot"),url("../fonts/SourceSansPro-Regular.woff") format("woff"),url("../fonts/SourceSansPro-Regular.ttf") format("truetype"),url("../fonts/SourceSansPro-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;}
+
+
+//@import 'partials/settings';
+@import 'partials/variables';
+@import 'partials/layout';
+@import 'partials/global';
+@import 'partials/typography';
+@import 'partials/normalize';
+
+@import 'pages/homepage.scss';
+
+// @import 'partials/header';
+// @import 'partials/cart';
