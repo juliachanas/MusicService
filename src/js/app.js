@@ -1,4 +1,5 @@
 import { settings, select, classNames } from './settings.js';
+// import Song from './components/Song.js';
 
 const app = {
   initPages: function () {
@@ -60,16 +61,43 @@ const app = {
       );
     }
   },
+
+  initPlayers: function () {
+    console.log('starting');
+    const thisApp = this;
+
+    console.log('thisApp.data.songs ', thisApp.data.songs);
+
+    // for (let songData in thisApp.data.songs) {
+    //   new Song(thisApp.data.songs[songData].id, thisApp.data.songs[songData]);
+    // }
+  },
+
   initData: function () {
+    const thisApp = this;
+
+    thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.songs;
-    this.data = {};
-    fetch(url)
-      .then((rawResponse) => {
-        return rawResponse.json();
+    console.log(url);
+
+    fetch(url) /* polacz sie z url*/
+      .then(function (rawResponse) {
+        return rawResponse.json(); /*przekonwertuj na plik json */
       })
-      .then((parsedResponse) => {
-        this.data.songs = parsedResponse;
+      .then(function (parsedResponse) {
+        console.log(
+          'parsedResponse',
+          parsedResponse
+        ); /*pokaz skonwertowane dane w konsoli*/
+
+        /* save parsedResponse at this.App.data.songs */
+        thisApp.data.songs = parsedResponse;
+        console.log('thisApp.data.songs', thisApp.data.songs);
+        /* execute initMenu method */
+        thisApp.initPlayers();
       });
+
+    console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
 
   init: function () {

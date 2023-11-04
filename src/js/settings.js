@@ -8,8 +8,12 @@ export const settings = {
   },
 };
 export const select = {
+  templateOf: {
+    song: '#template-song-player',
+  },
   containerOf: {
     pages: '#pages',
+    songs: '#player',
   },
   nav: {
     links: '.main-nav a',
@@ -23,4 +27,10 @@ export const classNames = {
   pages: {
     active: 'active',
   },
+};
+
+export const templates = {
+  song: Handlebars.compile(
+    document.querySelector(select.templateOf.song).innerHTML
+  ),
 };
