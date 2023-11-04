@@ -20,11 +20,16 @@ body {
   padding: 0 20px;
   text-align: center;
 }
-  
+// SUBPAGES VISABILITY
 section {
   display: none;
 }
 
 section.active {
   display: block;
+}
+
+//PLAYER
+.green-audio-player .slider .gap-progress .pin {
+  background-color: $secondColorFonts;
 }
