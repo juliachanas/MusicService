@@ -4,12 +4,16 @@ const app = {
   initPages: function () {
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
+    console.log(thisApp.pages);
+
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
+    console.log(thisApp.navLinks);
 
     const idFromhash = window.location.hash.replace('#/', '');
+    console.log(idFromhash);
 
     let pageMatchingHash = thisApp.pages[0].id;
-    console.log(pageMatchingHash);
+    console.log('page', pageMatchingHash);
 
     for (let page of thisApp.pages) {
       if (page.id == idFromhash) {
@@ -27,6 +31,7 @@ const app = {
         /* get page id from href attribute */
         //w stalej id chcemy zapisac atrybut href kliknietego eleementu, w ktorym zamienimy # na pusty ciag znakow
         const id = clickedElement.getAttribute('href').replace('#', '');
+        console.log('id', id);
 
         /*run this App.activatePage with that id*/
         thisApp.activatePage(id);
@@ -69,6 +74,7 @@ const app = {
 
   init: function () {
     const thisApp = this;
+    thisApp.initPages();
     thisApp.initData();
 
     GreenAudioPlayer.init({

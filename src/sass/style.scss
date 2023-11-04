@@ -28,13 +28,12 @@
 
 
 //@import 'partials/settings';
+@import 'partials/normalize';
 @import 'partials/variables';
 @import 'partials/layout';
 @import 'partials/global';
 @import 'partials/typography';
-@import 'partials/normalize';
+
 
 @import 'pages/homepage.scss';
-
-// @import 'partials/header';
-// @import 'partials/cart';
+@import 'pages/search.scss';
