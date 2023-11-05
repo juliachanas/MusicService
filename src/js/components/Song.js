@@ -13,7 +13,7 @@ class Song {
   renderInMenu() {
     const thisSong = this;
 
-    const generatedHTML = templates.song(thisSong.data);
+    const generatedHTML = templates.song({ ...thisSong.data, id: thisSong.id });
 
     thisSong.element = utils.createDOMFromHTML(generatedHTML);
 
