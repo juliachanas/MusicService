@@ -136,17 +136,14 @@
         <div class='song-description'>
           <h3>{{author}} - {{title}}</h3>
         </div>
-        <div class='player'>
+        <div id='song-{{id}}' class='player'>
           <audio id='song-audio'>
-            <!-- <source
-              src="songs/{{filename}}"
-              type="audio/mpeg"
-            /> -->
+            <source src='./songs/{{filename}}' type='audio/mpeg' />
           </audio>
         </div>
         <div class='row'>
-          <div class='categories col-5'>
-            <p>{{categories}}</p>
+          <div class='categories col-6'>
+            <p>Categories: {{categories}}</p>
           </div>
           <div class='categories col-5'>
             <p>(#{{ranking}}) in the ranking</p>
@@ -157,7 +154,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
-    <!-- <script src="./db/app.json"></script> -->
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>

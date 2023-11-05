@@ -1,5 +1,5 @@
 import { settings, select, classNames } from './settings.js';
-// import Song from './components/Song.js';
+import Song from './components/Song.js';
 
 const app = {
   initPages: function () {
@@ -68,9 +68,14 @@ const app = {
 
     console.log('thisApp.data.songs ', thisApp.data.songs);
 
-    // for (let songData in thisApp.data.songs) {
-    //   new Song(thisApp.data.songs[songData].id, thisApp.data.songs[songData]);
-    // }
+    for (let songData in thisApp.data.songs) {
+      new Song(thisApp.data.songs[songData].id, thisApp.data.songs[songData]);
+      console.log(
+        'Song: ',
+        thisApp.data.songs[songData].id,
+        thisApp.data.songs[songData]
+      );
+    }
   },
 
   initData: function () {
@@ -104,11 +109,6 @@ const app = {
     const thisApp = this;
     thisApp.initPages();
     thisApp.initData();
-
-    GreenAudioPlayer.init({
-      selector: '.player', // inits Green Audio Player on each audio container that has class "player"
-      stopOthersOnPlay: true,
-    });
   },
 };
 
