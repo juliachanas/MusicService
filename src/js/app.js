@@ -6,10 +6,11 @@ const app = {
   initSearch: function () {
     console.log('----starting - InitSearch----');
     const thisApp = this;
+    // console.log('thisApp.data.songs ', thisApp.data.songs);
 
     thisApp.searchContainer = document.querySelector(select.containerOf.search);
 
-    thisApp.search = new Search(thisApp.searchContainer);
+    thisApp.search = new Search(thisApp.searchContainer, thisApp.data.songs);
   },
 
   initPages: function () {
@@ -109,6 +110,7 @@ const app = {
         thisApp.data.songs = parsedResponse;
         //console.log('thisApp.data.songs', thisApp.data.songs);
         /* execute initMenu method */
+        thisApp.initSearch();
         thisApp.initPlayers();
       });
 
@@ -117,7 +119,7 @@ const app = {
 
   init: function () {
     const thisApp = this;
-    thisApp.initSearch();
+    //thisApp.initSearch();
     thisApp.initPages();
     thisApp.initData();
   },
