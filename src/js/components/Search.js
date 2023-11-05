@@ -7,13 +7,13 @@ class Search {
     const thisSearch = this;
 
     thisSearch.searchContainer = searchContainer;
-    console.log('searchContainer:', searchContainer);
+    // console.log('searchContainer:', searchContainer);
 
     thisSearch.songs = songs;
-    console.log('thisSearch.songs:', thisSearch.songs);
+    // console.log('thisSearch.songs:', thisSearch.songs);
 
     thisSearch.filteredSongs = [];
-    console.log('thisSearch.filteredSongs:', thisSearch.filteredSongs);
+    // console.log('thisSearch.filteredSongs:', thisSearch.filteredSongs);
 
     thisSearch.render(searchContainer);
     thisSearch.getElements();
@@ -28,7 +28,7 @@ class Search {
     /*generowanie kodu HTML za pomocą szablonu */
     const generatedHTML = templates.search();
 
-    thisSearch.searchContainer.innerHTML = generatedHTML;
+    thisSearch.container.innerHTML = generatedHTML;
   }
 
   getElements() {
@@ -53,7 +53,7 @@ class Search {
 
   initActions() {
     const thisSearch = this;
-    console.log('****starting initActions****');
+    // console.log('****starting initActions****');
 
     thisSearch.button.addEventListener('click', function (event) {
       event.preventDefault();
@@ -71,19 +71,19 @@ class Search {
         song.title.toLowerCase().includes(searchInputString.toLowerCase()) ||
         song.author.toLowerCase().includes(searchInputString.toLowerCase())
     );
-    console.log('thisSearch.filteredSongs', thisSearch.filteredSongs);
+    // console.log('thisSearch.filteredSongs', thisSearch.filteredSongs);
 
     thisSearch.renderFilteredSongs();
   }
 
   renderFilteredSongs() {
     const thisSearch = this;
-    console.log('*****starting renderFilteredSongs');
+    // console.log('*****starting renderFilteredSongs');
 
-    console.log(
-      'thisSearch.filteredSongs in filtered songs',
-      thisSearch.filteredSongs
-    );
+    // console.log(
+    //   'thisSearch.filteredSongs in filtered songs',
+    //   thisSearch.filteredSongs
+    // );
 
     thisSearch.results.innerHTML = '';
 

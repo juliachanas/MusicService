@@ -11,11 +11,13 @@ export const select = {
   templateOf: {
     song: '#template-song-player',
     search: '#template-search',
+    discover: '#template-discover',
   },
   containerOf: {
     pages: '#pages',
     songs: '#player',
     search: '.search-wrapper',
+    discover: '.discover-wrapper',
   },
   nav: {
     links: '.main-nav a',
@@ -42,5 +44,8 @@ export const templates = {
   ),
   search: Handlebars.compile(
     document.querySelector(select.templateOf.search).innerHTML
+  ),
+  discover: Handlebars.compile(
+    document.querySelector(select.templateOf.discover).innerHTML
   ),
 };

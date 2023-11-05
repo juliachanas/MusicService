@@ -1,8 +1,24 @@
 import { settings, select, classNames } from './settings.js';
 import Song from './components/Song.js';
 import Search from './components/Search.js';
+import Discover from './components/Discover.js';
 
 const app = {
+  initDiscover: function () {
+    console.log('****STARTING INIT DISCOVER****');
+
+    const thisApp = this;
+    //console.log('thisApp.data.songs ', thisApp.data.songs);
+
+    thisApp.dicoverContainer = document.querySelector(
+      select.containerOf.discover
+    );
+
+    thisApp.discover = new Discover(
+      thisApp.dicoverContainer,
+      thisApp.data.songs
+    );
+  },
   initSearch: function () {
     console.log('----starting - InitSearch----');
     const thisApp = this;
@@ -110,6 +126,7 @@ const app = {
         thisApp.data.songs = parsedResponse;
         //console.log('thisApp.data.songs', thisApp.data.songs);
         /* execute initMenu method */
+        thisApp.initDiscover();
         thisApp.initSearch();
         thisApp.initPlayers();
       });
