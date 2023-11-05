@@ -20,7 +20,7 @@ const app = {
     );
   },
   initSearch: function () {
-    console.log('----starting - InitSearch----');
+    // console.log('----starting - InitSearch----');
     const thisApp = this;
     // console.log('thisApp.data.songs ', thisApp.data.songs);
 

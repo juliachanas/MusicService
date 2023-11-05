@@ -1,4 +1,5 @@
-import { templates } from '../settings.js';
+import { templates, select } from '../settings.js';
+import Song from './Song.js';
 
 class Discover {
   constructor(discoverContainer, songs) {
@@ -8,9 +9,16 @@ class Discover {
     console.log('discoverContainer:', thisDiscover.discoverContainer);
 
     thisDiscover.songs = songs;
-    console.log('thisDiscover.songs:', thisDiscover.songs);
+    // console.log('thisDiscover.songs:', thisDiscover.songs);
 
     thisDiscover.render(discoverContainer);
+    thisDiscover.getElements();
+
+    //Sprawdzam, czy piosenka nie została już wylosowana i jeśli nie, to losujemy i wyświetlamy
+    if (!thisDiscover.randomSongIndex) {
+      thisDiscover.randomSong();
+      thisDiscover.renderRandomSong();
+    }
   }
   render(discoverContainer) {
     const thisDiscover = this;
@@ -19,10 +27,15 @@ class Discover {
 
     /*generowanie kodu HTML za pomocą szablonu */
     const generatedHTML = templates.discover();
-
     thisDiscover.container.innerHTML = generatedHTML;
+  }
+  getElements() {
+    const thisDiscover = this;
 
-    thisDiscover.randomSong();
+    thisDiscover.randomResult = thisDiscover.discoverContainer.querySelector(
+      select.discover.result
+    );
+    //console.log('randomResult', thisDiscover.randomResult);
   }
 
   randomSong() {
@@ -37,6 +50,18 @@ class Discover {
     //sprawdzam jaka piosenka kryje się pod wylosowanym indeksem
     thisDiscover.randomSong = thisDiscover.songs[thisDiscover.randomSongIndex];
     console.log('wylosowana losowa piosenka:', thisDiscover.randomSong);
+  }
+
+  renderRandomSong() {
+    const thisDiscover = this;
+
+    //teraz mam tylko jedną piosenkę, tylko tę wylosowaną
+    const song = new Song(
+      `discover-${thisDiscover.randomSong.id}`,
+      thisDiscover.randomSong
+    );
+    console.log('discover song:', song);
+    thisDiscover.randomResult.appendChild(song.element);
   }
 }
 

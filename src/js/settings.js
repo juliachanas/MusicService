@@ -27,6 +27,9 @@ export const select = {
     button: '.search-button',
     input: 'input',
   },
+  discover: {
+    result: '.discover-audio-wrapper',
+  },
 };
 
 export const classNames = {
