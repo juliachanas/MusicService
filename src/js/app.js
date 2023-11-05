@@ -1,20 +1,30 @@
 import { settings, select, classNames } from './settings.js';
 import Song from './components/Song.js';
+import Search from './components/Search.js';
 
 const app = {
+  initSearch: function () {
+    console.log('----starting - InitSearch----');
+    const thisApp = this;
+
+    thisApp.searchContainer = document.querySelector(select.containerOf.search);
+
+    thisApp.search = new Search(thisApp.searchContainer);
+  },
+
   initPages: function () {
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
-    console.log(thisApp.pages);
+    // console.log(thisApp.pages);
 
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
-    console.log(thisApp.navLinks);
+    // console.log(thisApp.navLinks);
 
     const idFromhash = window.location.hash.replace('#/', '');
-    console.log(idFromhash);
+    // console.log(idFromhash);
 
     let pageMatchingHash = thisApp.pages[0].id;
-    console.log('page', pageMatchingHash);
+    // console.log('page', pageMatchingHash);
 
     for (let page of thisApp.pages) {
       if (page.id == idFromhash) {
@@ -32,7 +42,7 @@ const app = {
         /* get page id from href attribute */
         //w stalej id chcemy zapisac atrybut href kliknietego eleementu, w ktorym zamienimy # na pusty ciag znakow
         const id = clickedElement.getAttribute('href').replace('#', '');
-        console.log('id', id);
+        // console.log('id', id);
 
         /*run this App.activatePage with that id*/
         thisApp.activatePage(id);
@@ -63,18 +73,18 @@ const app = {
   },
 
   initPlayers: function () {
-    console.log('starting');
+    // console.log('starting');
     const thisApp = this;
 
-    console.log('thisApp.data.songs ', thisApp.data.songs);
+    // console.log('thisApp.data.songs ', thisApp.data.songs);
 
     for (let songData in thisApp.data.songs) {
       new Song(thisApp.data.songs[songData].id, thisApp.data.songs[songData]);
-      console.log(
-        'Song: ',
-        thisApp.data.songs[songData].id,
-        thisApp.data.songs[songData]
-      );
+      // console.log(
+      //   'Song: ',
+      //   thisApp.data.songs[songData].id,
+      //   thisApp.data.songs[songData]
+      // );
     }
   },
 
@@ -83,30 +93,31 @@ const app = {
 
     thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.songs;
-    console.log(url);
+    // console.log(url);
 
     fetch(url) /* polacz sie z url*/
       .then(function (rawResponse) {
         return rawResponse.json(); /*przekonwertuj na plik json */
       })
       .then(function (parsedResponse) {
-        console.log(
-          'parsedResponse',
-          parsedResponse
-        ); /*pokaz skonwertowane dane w konsoli*/
+        // console.log(
+        //   'parsedResponse',
+        //   parsedResponse
+        // ); /*pokaz skonwertowane dane w konsoli*/
 
         /* save parsedResponse at this.App.data.songs */
         thisApp.data.songs = parsedResponse;
-        console.log('thisApp.data.songs', thisApp.data.songs);
+        //console.log('thisApp.data.songs', thisApp.data.songs);
         /* execute initMenu method */
         thisApp.initPlayers();
       });
 
-    console.log('thisApp.data', JSON.stringify(thisApp.data));
+    // console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
 
   init: function () {
     const thisApp = this;
+    thisApp.initSearch();
     thisApp.initPages();
     thisApp.initData();
   },

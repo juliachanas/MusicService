@@ -10,13 +10,20 @@ export const settings = {
 export const select = {
   templateOf: {
     song: '#template-song-player',
+    search: '#template-search',
   },
   containerOf: {
     pages: '#pages',
     songs: '#player',
+    search: '.search-wrapper',
   },
   nav: {
     links: '.main-nav a',
+  },
+  search: {
+    result: '.result-audio-wrapper',
+    button: '.search-button',
+    input: 'input',
   },
 };
 
@@ -32,5 +39,8 @@ export const classNames = {
 export const templates = {
   song: Handlebars.compile(
     document.querySelector(select.templateOf.song).innerHTML
+  ),
+  search: Handlebars.compile(
+    document.querySelector(select.templateOf.search).innerHTML
   ),
 };

@@ -93,24 +93,7 @@
       </section>
 
       <section id="search">
-        <div class="search-wrapper container">
-          <div class="title">
-            <h2>search</h2>
-          </div>
-          <div class="row text-center justify-content-around mb-15">
-            <div class="colum col-2">
-              <p>NAME</p>
-            </div>
-            <div class="colum col-7">
-              <input type="text" id="song" class="form-control" />
-            </div>
-            <div class="colum col-3">
-              <button type="button" class="btn btn-danger btn-lg">
-                SEARCH
-              </button>
-            </div>
-          </div>
-        </div>
+        <div class="search-wrapper container"></div>
       </section>
 
       <section id="discover">
@@ -146,9 +129,30 @@
             <p>Categories: {{categories}}</p>
           </div>
           <div class='categories col-5'>
-            <p>(#{{ranking}}) in the ranking</p>
+            <p>#{{ranking}} in the ranking</p>
           </div>
         </div>
+      </div>
+    </script>
+    <script id="template-search" type="text/x-handlebars-template">
+      <div class='title'>
+        <h2>search</h2>
+      </div>
+      <div class='row text-center justify-content-around mb-15'>
+        <div class='colum col-2'>
+          <p>NAME</p>
+        </div>
+        <div class='colum col-7'>
+          <input type='text' id='song' class='form-control' />
+        </div>
+        <div class='colum col-3'>
+          <button type='button' class='btn btn-danger btn-lg search-button'>
+            SEARCH
+          </button>
+        </div>
+      </div>
+      <div id='search-result-player' class='result-audio-wrapper container'>
+
       </div>
     </script>
 
