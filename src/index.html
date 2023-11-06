@@ -20,24 +20,26 @@
   </head>
   <body>
     <header class="splash">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="page-title">
-            <h1 class="page__title">Taste</h1>
-            <h2 class="page__subtitle">
-              engage <br />
-              in <br />
-              art
-            </h2>
+      <!-- <div class="container"> -->
+      <div class="header__wrapper">
+        <div class="page-title">
+          <div id="title" class="page__title">
+            <h1>Taste</h1>
+          </div>
+          <div id="sub-title" class="page__subtitle">
+            <h2>engage</h2>
+            <h2>in</h2>
+            <h2>art</h2>
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </header>
 
     <div class="gradient-line"></div>
 
     <div class="main-nav">
-      <div class="container">
+      <div id="nav" class="container">
         <a href="#home">Home</a>
         <a href="#search">Search</a>
         <a href="#discover">Discover</a>
@@ -102,27 +104,31 @@
     </div>
 
     <script id="template-song-player" type="text/x-handlebars-template">
-      <div class='player-audio'>
-        <div class='song-description'>
+      <div class="player-audio">
+        <div class="song-description">
           <h3>{{author}} - {{title}}</h3>
         </div>
-        <div id='song-{{id}}' class='player'>
-          <audio id='song-audio'>
-            <source src='./songs/{{filename}}' type='audio/mpeg' />
+        <div id="song-{{id}}" class="player">
+          <audio id="song-audio">
+            <source src="./songs/{{filename}}" type="audio/mpeg" />
           </audio>
         </div>
-        <div class='row'>
-          <div class='categories col-6'>
-            <p>Categories: {{categories}}</p>
+        <div class="row w-100">
+          <div class="categories col-7">
+            <p>Categories: <span>
+              {{#each categories}}
+                {{this}}{{#unless @last}}, {{/unless}}
+              {{/each}}
+            </span>
           </div>
-          <div class='categories col-5'>
+          <div class="categories col-5">
             <p>#{{ranking}} in the ranking</p>
           </div>
         </div>
       </div>
     </script>
     <script id="template-search" type="text/x-handlebars-template">
-      <div class='title'>
+      <div id='title-1' class='title'>
         <h2>search</h2>
       </div>
       <div class='row text-center justify-content-around mb-15'>
@@ -143,7 +149,7 @@
       </div>
     </script>
     <script id="template-discover" type="text/x-handlebars-template">
-      <div class='title text-center'>
+      <div id='title-2' class='title text-center'>
         <h2>discover</h2>
         <h6>Give it a try!</h6>
       </div>
@@ -153,6 +159,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+    <script src="./js/fonts.js"></script>
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@ import Discover from './components/Discover.js';
 
 const app = {
   initDiscover: function () {
-    console.log('****STARTING INIT DISCOVER****');
+    //console.log('****STARTING INIT DISCOVER****');
 
     const thisApp = this;
     //console.log('thisApp.data.songs ', thisApp.data.songs);

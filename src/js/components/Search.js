@@ -90,7 +90,7 @@ class Search {
     for (let songData of thisSearch.filteredSongs) {
       const song = new Song(`search-${songData.id}`, songData); // <div id="song-search-1"
 
-      //   console.log('song', song);
+      //console.log('song', song);
       thisSearch.results.appendChild(song.element);
     }
   }

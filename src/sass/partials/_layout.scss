@@ -9,13 +9,35 @@
   background-size: cover;
   //background-attachment: fixed;  /*okresla czy pozycja obrazu jest stala czy przewija sie*/
     
-  .container  {
+  .page-title  {
     position: absolute;         /*wysrodkowany w obu osiach względem rodzica*/
     width: 100%;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 51.5%;
     transform: translate(-50%,-50%);
     text-align: center;
+
+    .page__title{
+      font-family: 'Source Sans Pro Black';
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .page__subtitle{
+      font-family: 'Source Sans Pro Semibold';
+      letter-spacing: 8px;
+      position: absolute;
+      // top: 50%;
+      left: 47.5%;
+      transform: translate(-50%,-50%);
+      // font-size:
+      font-weight: bold;
+      margin-top: 50px;
+
+      h2{
+        margin-top: 20px;
+      }
+    }
   }
 }
 
@@ -27,7 +49,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -19px;
 }
 
 //NAVIGATION
@@ -47,6 +69,8 @@
     a {
       text-decoration: none;
       color: $primaryColorFonts;
+      font-family: 'Source Sans Pro';
+      font-size: 22px;
     }
   }
 

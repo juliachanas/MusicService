@@ -6,7 +6,7 @@ class Discover {
     const thisDiscover = this;
 
     thisDiscover.discoverContainer = discoverContainer;
-    console.log('discoverContainer:', thisDiscover.discoverContainer);
+    //console.log('discoverContainer:', thisDiscover.discoverContainer);
 
     thisDiscover.songs = songs;
     // console.log('thisDiscover.songs:', thisDiscover.songs);
@@ -45,11 +45,11 @@ class Discover {
     thisDiscover.randomSongIndex = Math.floor(
       Math.random() * thisDiscover.songs.length
     );
-    console.log('wylosowany index piosenki: ', thisDiscover.randomSongIndex);
+    //console.log('wylosowany index piosenki: ', thisDiscover.randomSongIndex);
 
     //sprawdzam jaka piosenka kryje się pod wylosowanym indeksem
     thisDiscover.randomSong = thisDiscover.songs[thisDiscover.randomSongIndex];
-    console.log('wylosowana losowa piosenka:', thisDiscover.randomSong);
+    //console.log('wylosowana losowa piosenka:', thisDiscover.randomSong);
   }
 
   renderRandomSong() {
@@ -60,7 +60,7 @@ class Discover {
       `discover-${thisDiscover.randomSong.id}`,
       thisDiscover.randomSong
     );
-    console.log('discover song:', song);
+    //console.log('discover song:', song);
     thisDiscover.randomResult.appendChild(song.element);
   }
 }
