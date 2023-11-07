@@ -18,13 +18,15 @@
     text-align: center;
 
     .page__title{
-      font-family: 'Source Sans Pro Black';
+      font-family: $titleFontBold;
       margin-top: 0;
       margin-bottom: 20px;
+      letter-spacing: 92px;
+      font-size: 185px;
     }
 
     .page__subtitle{
-      font-family: 'Source Sans Pro Semibold';
+      font-family: $titleFontBold;
       letter-spacing: 8px;
       position: absolute;
       // top: 50%;
@@ -69,9 +71,50 @@
     a {
       text-decoration: none;
       color: $primaryColorFonts;
-      font-family: 'Source Sans Pro';
-      font-size: 22px;
+      font-family: $mainFontSemiBold;
+      font-size: 26px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+//PLAYER
+.green-audio-player {
+  width: 450px;
+  height: 50px;
+
+  .slider .gap-progress .pin {
+    background-color: $secondColorFonts;
+  }
+}
+
+.player-audio {
+  text-align: center; /* Wyśrodkowanie zawartości w poziomie */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkowanie zawartości w pionie */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  .song-description {
+    font-family: $mainFontSemiBold;
+    letter-spacing: 1px;
+    font-size: 28px;
+  }
+
+  .row {
+    text-align: left;
+
+    .categories{
+      font-family: $regularFont;
+      letter-spacing: 1px;
+      font-size: 16px;
     }
   }
 
+  .player {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
+

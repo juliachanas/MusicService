@@ -8,6 +8,7 @@ class Song {
     thisSong.id = id;
     thisSong.data = data;
     thisSong.renderInMenu();
+    // thisSong.changeTextToUpperCase();
   }
   // tworzenie elementu HTML na podstawie szablonu i dodanie na stronę
   renderInMenu() {
@@ -26,6 +27,17 @@ class Song {
       stopOthersOnPlay: true,
     });
   }
+  // changeTextToUpperCase() {
+  //   const thisSong = this;
+
+  //   // Znajdź element wewnątrz audio playera, który zawiera tekst
+  //   const textElement = thisSong.element.querySelector('.song-description h3');
+
+  //   if (textElement) {
+  //     // Ustaw tekst na wielkie litery
+  //     textElement.textContent = textElement.textContent.toUpperCase();
+  //   }
+  // }
 }
 
 export default Song;

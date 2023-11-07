@@ -13,6 +13,7 @@ class Discover {
 
     thisDiscover.render(discoverContainer);
     thisDiscover.getElements();
+    thisDiscover.changeTextToUpperCase();
 
     //Sprawdzam, czy piosenka nie została już wylosowana i jeśli nie, to losujemy i wyświetlamy
     if (!thisDiscover.randomSongIndex) {
@@ -36,6 +37,9 @@ class Discover {
       select.discover.result
     );
     //console.log('randomResult', thisDiscover.randomResult);
+
+    thisDiscover.title =
+      thisDiscover.discoverContainer.querySelector('.title h2');
   }
 
   randomSong() {
@@ -62,6 +66,14 @@ class Discover {
     );
     //console.log('discover song:', song);
     thisDiscover.randomResult.appendChild(song.element);
+  }
+  changeTextToUpperCase() {
+    const thisDiscover = this;
+
+    if (thisDiscover.title) {
+      thisDiscover.title.textContent =
+        thisDiscover.title.textContent.toUpperCase();
+    }
   }
 }
 

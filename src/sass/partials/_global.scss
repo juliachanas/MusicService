@@ -17,11 +17,10 @@ body {
 .container {
   max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 100px;
   padding: 0 20px;
   text-align: center;
 }
-
-
 
 // SUBPAGES VISABILITY
 section {
@@ -31,33 +30,3 @@ section {
 section.active {
   display: block;
 }
-
-//PLAYER
-.green-audio-player {
-  width: 450px;
-  height: 50px;
-
-  .slider .gap-progress .pin {
-    background-color: $secondColorFonts;
-  }
-}
-
-.player-audio {
-  text-align: center; /* Wyśrodkowanie zawartości w poziomie */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Wyśrodkowanie zawartości w pionie */
-  margin-top: 30px;
-  margin-bottom: 30px;
-  
-  .row {
-    text-align: left;
-  }
-
-  .player {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-
-

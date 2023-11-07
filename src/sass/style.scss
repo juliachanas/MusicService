@@ -26,14 +26,12 @@
   font-weight: normal;
   font-style: normal;}
 
-
 //@import 'partials/settings';
-@import 'partials/normalize';
-@import 'partials/variables';
-@import 'partials/layout';
-@import 'partials/global';
-@import 'partials/typography';
-
+@import 'partials/_normalize.scss';
+@import 'partials/_variables.scss';
+@import 'partials/_global.scss';
+@import 'partials/_layout.scss';
+@import 'partials/_typography.scss';
 
 @import 'pages/homepage.scss';
 @import 'pages/search.scss';

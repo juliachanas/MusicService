@@ -18,6 +18,7 @@ class Search {
     thisSearch.render(searchContainer);
     thisSearch.getElements();
     thisSearch.initActions();
+    thisSearch.changeTextToUpperCase();
   }
 
   render(searchContainer) {
@@ -49,6 +50,8 @@ class Search {
       select.search.button
     );
     // console.log('button', thisSearch.button);
+
+    thisSearch.title = thisSearch.searchContainer.querySelector('.title h2');
   }
 
   initActions() {
@@ -92,6 +95,16 @@ class Search {
 
       //console.log('song', song);
       thisSearch.results.appendChild(song.element);
+    }
+  }
+  changeTextToUpperCase() {
+    const thisSearch = this;
+
+    if ((thisSearch.title, thisSearch.button)) {
+      // Ustaw tekst na wielkie litery
+      thisSearch.title.textContent = thisSearch.title.textContent.toUpperCase();
+      thisSearch.button.textContent =
+        thisSearch.button.textContent.toUpperCase();
     }
   }
 }
