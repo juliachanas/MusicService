@@ -1,1 +1,36 @@
 //STYLE DLA PODSTRONY SEARCH
+
+.search-wrapper {
+
+    .title {
+        margin-bottom: 50px;
+
+        h2 {
+            font-family: $mainFontSemiBold;
+            font-size: 40px;
+            letter-spacing: 7px;
+        }
+    }
+
+    .row {
+        margin-bottom: 50px;
+    }
+
+    .name p {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        letter-spacing: 3px;
+        font-family: $mainFontSemiBold;
+    }
+}
+
+
+
+

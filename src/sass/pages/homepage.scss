@@ -57,12 +57,11 @@
   top: 80%;
   padding-right: 17%;
   font-family: $mainFontSemiBold;
-  font-size: 25px;
+  font-size: 27px;
   letter-spacing: 10px;
     
   p {
-    margin-bottom: 5px;
-      
+    margin-bottom: 5px;    
   }
 }
 
@@ -80,10 +79,10 @@
       font-family:$titleFontBold;
     }
   }
-
 }
 
 .footer .container {
   margin-bottom: 0;
   font-family: $regularFont;
+  letter-spacing: 2px;
 }

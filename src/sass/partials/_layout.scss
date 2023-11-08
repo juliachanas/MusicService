@@ -69,6 +69,8 @@
     margin-bottom: 50px;
     
     a {
+      width:130px;
+      text-align: center;
       text-decoration: none;
       color: $primaryColorFonts;
       font-family: $mainFontSemiBold;
@@ -98,7 +100,7 @@
   
   .song-description {
     font-family: $mainFontSemiBold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 28px;
   }
 
