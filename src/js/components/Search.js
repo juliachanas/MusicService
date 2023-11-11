@@ -51,6 +51,10 @@ class Search {
     );
     // console.log('button', thisSearch.button);
 
+    thisSearch.amount = thisSearch.searchContainer.querySelector(
+      select.search.amount
+    );
+
     thisSearch.title = thisSearch.searchContainer.querySelector('.title h2');
   }
 
@@ -75,6 +79,11 @@ class Search {
         song.author.toLowerCase().includes(searchInputString.toLowerCase())
     );
     // console.log('thisSearch.filteredSongs', thisSearch.filteredSongs);
+    const filteredSongsLength = thisSearch.filteredSongs.length;
+
+    //console.log(`Wysolowano ${filteredSongsLength} piosenek`);
+
+    thisSearch.amount.textContent = `We have found ${filteredSongsLength} songs...`;
 
     thisSearch.renderFilteredSongs();
   }

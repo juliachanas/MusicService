@@ -26,6 +26,7 @@ export const select = {
     result: '.result-audio-wrapper',
     button: '.search-button',
     input: 'input',
+    amount: '.search-result-amount',
   },
   discover: {
     result: '.discover-audio-wrapper',

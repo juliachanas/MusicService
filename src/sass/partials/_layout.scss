@@ -67,15 +67,19 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    .row {
+      width:500px;
     
-    a {
-      width:130px;
-      text-align: center;
-      text-decoration: none;
-      color: $primaryColorFonts;
-      font-family: $mainFontSemiBold;
-      font-size: 26px;
-      letter-spacing: 2px;
+      a {
+        // width:130px;
+        // text-align: center;
+        text-decoration: none;
+        color: $primaryColorFonts;
+        font-family: $mainFontSemiBold;
+        font-size: 26px;
+        letter-spacing: 2px;
+      }
     }
   }
 }
