@@ -33,7 +33,7 @@ export const select = {
     result: '.discover-audio-wrapper',
   },
   home: {
-    categories: '.song-categories-filters',
+    categories: '.song-categories-filters .list',
   },
 };
 

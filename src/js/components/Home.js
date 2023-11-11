@@ -20,13 +20,15 @@ class Home {
     thisHome.categories = thisHome.homeContainer.querySelector(
       select.home.categories
     );
-    console.log('categories', thisHome.categories);
+    //console.log('categories', thisHome.categories);
   }
 
   generateCategoryLinks() {
     const thisHome = this;
 
     let allCategories = [];
+
+    let html = '';
 
     // Iteruję przez piosenki i dodaję kategorie do tablicy
     thisHome.songs.forEach((song) => {
@@ -43,7 +45,11 @@ class Home {
       const linkHTMLData = { category };
       const linkHTML = templates.categoryLink(linkHTMLData);
       console.log(linkHTML);
+      html = html + linkHTML;
     }
+    //html = html.slice(0, -1) + '</li>';
+
+    thisHome.categories.innerHTML = html;
   }
 }
 

@@ -86,3 +86,42 @@
   font-family: $regularFont;
   letter-spacing: 2px;
 }
+
+
+//KATEGORIE - STYLE
+
+.song-categories-filters{
+  display:flex;
+  text-align: left;
+  font-family: $regularFont;
+  letter-spacing: 1px;
+  justify-content: space-around;
+  padding:0;
+
+  p {
+    margin:0;
+    font-family: $mainFontSemiBold;
+  }
+
+  .list-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 2px;
+
+      a {
+        text-decoration: none; /* Usuwa podkreślenie */
+        color: inherit; /* Dziedziczy kolor z rodzica (jeśli jest) */
+      }
+    }
+  }
+}
+
+
+//usunięcie ostatniego przecinka z kategorii
+li:not(:last-child)::after {
+  content: ',';
+}
