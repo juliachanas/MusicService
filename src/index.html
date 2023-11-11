@@ -50,6 +50,12 @@
 
     <div id="pages">
       <section id="home">
+        <div id="song-categories" class="song-categories-filters">
+          <ul class="list list-horizontal">
+            <!--<li><a href="#"></a></li>
+            <li><a href="#"></a></li>-->
+          </ul>
+        </div>
         <div id="player" class="audio-wrapper container"></div>
 
         <div class="subscribe">
@@ -170,6 +176,9 @@
       <div id='discover-result-player' class='discover-audio-wrapper'>
 
       </div>
+    </script>
+    <script id="template-category-link" type="text/x-handlebars-template">
+      <li><a href='#category-{{category}}'><span>{{category}}</span></a></li>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>

@@ -9,35 +9,35 @@
   background-size: cover;
   //background-attachment: fixed;  /*okresla czy pozycja obrazu jest stala czy przewija sie*/
     
-  .page-title  {
-    position: absolute;         /*wysrodkowany w obu osiach względem rodzica*/
+  .page-title {
+    position: absolute;         /*pozycja względem rodzica*/
     width: 100%;
-    top: 40%;
+    top: 38%;
     left: 51.5%;
     transform: translate(-50%,-50%);
     text-align: center;
+    font-family: $titleFontBold;
 
-    .page__title{
-      font-family: $titleFontBold;
+    .page__title {
       margin-top: 0;
-      margin-bottom: 20px;
-      letter-spacing: 92px;
-      font-size: 185px;
+      margin-bottom: 0;
+      letter-spacing: 6vw; //92px;
+      font-size: 10vw;
     }
 
     .page__subtitle{
-      font-family: $titleFontBold;
-      letter-spacing: 8px;
+      letter-spacing: 0.45vw; //8px;
       position: absolute;
       // top: 50%;
       left: 47.5%;
       transform: translate(-50%,-50%);
-      // font-size:
       font-weight: bold;
-      margin-top: 50px;
+      margin-top: 80px; //ma tak zostać - zmienić w media!!!
 
-      h2{
-        margin-top: 20px;
+      h2 {
+        // margin-top: 20px;
+        font-size: 2vw; //zmienić w media!!!
+        margin: 16px 0;
       }
     }
   }

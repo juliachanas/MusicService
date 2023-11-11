@@ -2,8 +2,18 @@ import { settings, select, classNames } from './settings.js';
 import Song from './components/Song.js';
 import Search from './components/Search.js';
 import Discover from './components/Discover.js';
+import Home from './components/Home.js';
 
 const app = {
+  initHome: function () {
+    console.log('****STARTING INIT HOME***');
+
+    const thisApp = this;
+
+    thisApp.homeContainer = document.querySelector(select.containerOf.home);
+
+    thisApp.home = new Home(thisApp.homeContainer, thisApp.data.songs);
+  },
   initDiscover: function () {
     //console.log('****STARTING INIT DISCOVER****');
 
@@ -126,6 +136,7 @@ const app = {
         thisApp.data.songs = parsedResponse;
         //console.log('thisApp.data.songs', thisApp.data.songs);
         /* execute initMenu method */
+        thisApp.initHome();
         thisApp.initDiscover();
         thisApp.initSearch();
         thisApp.initPlayers();

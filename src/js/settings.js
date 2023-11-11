@@ -18,6 +18,7 @@ export const select = {
     songs: '#player',
     search: '.search-wrapper',
     discover: '.discover-wrapper',
+    home: '#home',
   },
   nav: {
     links: '.main-nav a',
@@ -30,6 +31,9 @@ export const select = {
   },
   discover: {
     result: '.discover-audio-wrapper',
+  },
+  home: {
+    categories: '.song-categories-filters',
   },
 };
 
@@ -51,5 +55,8 @@ export const templates = {
   ),
   discover: Handlebars.compile(
     document.querySelector(select.templateOf.discover).innerHTML
+  ),
+  categoryLink: Handlebars.compile(
+    document.querySelector('#template-category-link').innerHTML
   ),
 };
