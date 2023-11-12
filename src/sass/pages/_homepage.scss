@@ -10,8 +10,8 @@
 //AUTHOR IMAGE
 .image-author {
   position: absolute;
-  top: 14%;
-  left: 57%;
+  // top: 14%;
+  // left: 57%;
 
   img {
     max-width: 430px;
@@ -21,8 +21,8 @@
 
 .name-author {
   position: absolute;
-  top: 45%;
-  left: 43%;
+  // top: 45%;
+  // left: 43%;
   z-index: 2;
   font-size: 80px;
   font-family: $titleFontBold;
@@ -30,7 +30,7 @@
 
   .surname{
     position: absolute;
-    left: 15%;
+    // left: 15%;
     top: 64%;
 
     span {
@@ -41,8 +41,8 @@
 
 .button-join {
   position: absolute;
-  left: 22%;
-  top: 56%;
+  // left: 22%;
+  // top: 56%;
 
   .btn {
     padding: 16px;
@@ -54,7 +54,7 @@
 
 .description{
   position: absolute;
-  top: 80%;
+  // top: 80%;
   padding-right: 17%;
   font-family: $mainFontSemiBold;
   font-size: 27px;
@@ -95,7 +95,7 @@
   text-align: left;
   font-family: $regularFont;
   letter-spacing: 1px;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
 
   p {
@@ -126,32 +126,133 @@ li:not(:last-child)::after {
   content: ',';
 }
 
+// @media (max-width: 768px) {
+//   .image-author {
+//     top: 50%;
+//     right: 10%;
+//     max-width: 230px;
+//     padding: 0;
+
+  
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//     }
+//   }
+
+//   .name-author {
+//     top: 66%;
+//     right: 310px;
+//     font-size: 72.2px;
+//     letter-spacing: 10px;
+  
+//     .surname{
+//       right: -165px;
+//     }
+//   }
+
+//   .button-join {
+//     right: 10%;
+//     top: 36%;
+//     padding: 0;
+//     width: 106px;
+
+//     .btn {
+//       width: 106px;
+//       padding: 8px;
+//       font-size: 16px;
+//       letter-spacing: 2px;
+//     }
+//   }
+
+//   .sub-title {
+//     top: -6%;
+//     letter-spacing: 12px;
+//     padding: 0;
+//     left: 0;
+  
+//     h2 {
+//       font-size: 8vw;
+
+//       span{
+//         font-size: 9vw;
+//       }
+//     }
+//   }
+
+//   .description{
+//     top: 18%;
+//     right: 8%;
+//     padding-right: 10px;
+//     padding-left: 0;
+//     font-size: 22px;
+//     letter-spacing: 8px;
+    
+//     .new-album {
+//       font-size: 25px;
+//     }
+//   }
+
+//   .footer .container {
+//     margin-bottom: 0;
+//     letter-spacing: 2px;
+//     font-size: 10px;
+//   }
+
+//   .container {
+//     margin-bottom: 50px;
+//   }
+
+//   .song-categories-filters {
+//     //display: block;
+//     max-width: 577px;
+//     letter-spacing: 1px;
+
+//     p {
+//       font-size: 14px;
+//       
+//     }
+//     li {
+//       margin-right: 2px;
+//       padding-left: 5px;
+
+//       a {
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: 576px) {
   .image-author {
-    top: 54%;
-    left: 46%;
+    top: 50%;
+    right: 15%;
+    max-width: 200px;
+    padding: 0;
   
     img {
-      max-width: 200px;
-      max-height: 500px;
+      max-width: 100%;
+      height: auto;
     }
   }
 
   .name-author {
-    top: 70%;
-    left: 14%;
+    right: 50%; //250px;
+    top: 64%;
     font-size: 48px;
     letter-spacing: 8px;
+    padding: 0;
   
     .surname{
-      left: 28%;
-      top: 64%;
+      right: -117px;
     }
   }
 
   .button-join {
-    left: 70%;
-    top: 42%;
+    right: 15%;
+    top: 39%;
+    padding: 0;
+    width: 96px;
     
     .btn {
       width: 96px;
@@ -178,15 +279,16 @@ li:not(:last-child)::after {
   }
 
   .description{
-    top: 23%;
-    left: 0;
-    padding-right:10px;
+    width: 400px;
+    top: 19%;
+    right: 14%;
+    padding-right: 0;
     padding-left: 0;
     font-size: 20px;
     letter-spacing: 8px;
     
     .new-album {
-      color:#CF383E;
+      color: #CF383E;
       font-size: 23px;
     }
   }
@@ -207,14 +309,17 @@ li:not(:last-child)::after {
     letter-spacing: 1px;
 
     p{
-      font-size: 13px ;
+      font-size: 13px;
+      padding-right: 10px;
     }
+
     li {
       margin-right: 2px;
+      padding-left: 2px;
+
       a {
         font-size: 13px;
       }
     }
   }
-  
 }

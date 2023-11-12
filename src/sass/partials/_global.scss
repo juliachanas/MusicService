@@ -29,10 +29,21 @@ section.active {
   display: block;
 }
 
+// @media (max-width: 768px) {
+//   body {
+//     .container {
+//       max-width: 577px;
+//       padding-left: 20px;
+//       padding-right: 20px;
+//     }
+//   }
+// }
+
 @media (max-width: 576px) {
   body {
     .container {
-      max-width: 420px;
+      max-width: 400px;
     }
   }
 }
+
