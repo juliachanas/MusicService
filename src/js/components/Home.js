@@ -47,9 +47,21 @@ class Home {
       console.log(linkHTML);
       html = html + linkHTML;
     }
-    //html = html.slice(0, -1) + '</li>';
-
     thisHome.categories.innerHTML = html;
+    thisHome.addClickListenersToCategory();
+  }
+
+  addClickListenersToCategory() {
+    const thisHome = this;
+
+    thisHome.links = document.querySelectorAll('[href^="#category-"]');
+    console.log('thisHome.links', thisHome.links);
+
+    for (let link of thisHome.links) {
+      link.addEventListener('click', function (event) {
+        thisHome.event = event.preventDefault();
+      });
+    }
   }
 }
 

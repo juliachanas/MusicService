@@ -69,11 +69,9 @@
     margin-bottom: 50px;
 
     .row {
-      width:500px;
+      width: 500px;
     
       a {
-        // width:130px;
-        // text-align: center;
         text-decoration: none;
         color: $primaryColorFonts;
         font-family: $mainFontSemiBold;
@@ -124,3 +122,62 @@
   }
 }
 
+@media (max-width: 576px) {
+  .splash{
+    .page-title {
+      top: 40%;
+      left: 50%;
+
+      .page__title {
+        letter-spacing: 6vw; 
+        font-size: 12vw;
+      }
+
+      .page__subtitle {
+        letter-spacing: 0.8vw; 
+        left: 50%;
+        margin-top: 100px; 
+  
+        h2 {
+
+          font-size: 4vw; 
+          margin: 16px 0;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    .container {
+      .row {
+        max-width: 420px;
+      
+        a {
+          font-size: 15px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  .green-audio-player {
+    width: 330px;
+    height: 40px;
+  }
+  
+  .player-audio {
+    .song-description {
+      letter-spacing: 2px;
+      font-size: 25px;
+    }
+  
+    .row {
+      text-align: left;
+  
+      .categories {
+        font-size: 13px;
+        padding-left: 24px;
+      }
+    }
+  }
+}

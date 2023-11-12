@@ -60,9 +60,7 @@
           <div class="splash">
             <div class="row">
               <div class="col-3 button-join">
-                <button type="button" class="btn btn-danger btn-lg">
-                  join now
-                </button>
+                <a href="/join-us" class="btn btn-danger btn-lg"> join now </a>
               </div>
               <div class="col-4 name-author">
                 <div class="name"><p>dean</p></div>
@@ -93,7 +91,7 @@
         </div>
 
         <div class="footer">
-          <div class="container py-3">
+          <div class="container py-1">
             <p class="mb-0">All rights reserved</p>
           </div>
         </div>
@@ -102,7 +100,7 @@
       <section id="search">
         <div class="search-wrapper container"></div>
         <div class="footer">
-          <div class="container py-3">
+          <div class="container py-1">
             <p class="mb-0">All rights reserved</p>
           </div>
         </div>
@@ -111,7 +109,7 @@
       <section id="discover">
         <div class="discover-wrapper container"></div>
         <div class="footer">
-          <div class="container py-3">
+          <div class="container py-1">
             <p class="mb-0">All rights reserved</p>
           </div>
         </div>
@@ -143,40 +141,40 @@
       </div>
     </script>
     <script id="template-search" type="text/x-handlebars-template">
-      <div id='title-1' class='title'>
+      <div id="title-1" class="title">
         <h2>search</h2>
       </div>
-      <div class='row text-center justify-content-around'>
-        <div class='colum col-2 name'>
+      <div class="row text-center justify-content-around">
+        <div class="colum col-3 name">
           <p>Name</p>
         </div>
-        <div class='colum col-7'>
-          <input type='text' id='song' class='form-control' />
+        <div class="colum col-6">
+          <input type="text" id="song" class="form-control" />
         </div>
-        <div class='colum col-3'>
-          <button type='button' class='btn btn-danger btn-lg search-button'>
+        <div class="colum col-3">
+          <button type="button" class="btn btn-danger btn-lg search-button">
             SEARCH
           </button>
         </div>
       </div>
-      <div id='search-result-amount' class='search-result-amount'>
+      <div id="search-result-amount" class="search-result-amount">
 
       </div>
-      <div id='search-result-player' class='result-audio-wrapper'>
+      <div id="search-result-player" class="result-audio-wrapper">
 
       </div>
     </script>
     <script id="template-discover" type="text/x-handlebars-template">
-      <div id='title-2' class='title text-center'>
+      <div id="title-2" class="title text-center">
         <h2>discover</h2>
         <h6>Give it a try!</h6>
       </div>
-      <div id='discover-result-player' class='discover-audio-wrapper'>
+      <div id="discover-result-player" class="discover-audio-wrapper">
 
       </div>
     </script>
     <script id="template-category-link" type="text/x-handlebars-template">
-      <li><a href='#category-{{category}}'><span>{{category}}</span></a></li>
+      <li><a href="#category-{{category}}"><span>{{category}}</span></a></li>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
