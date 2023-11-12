@@ -122,66 +122,66 @@
   }
 }
 
-// @media (max-width: 768px) {
-//   .splash{
-//     .page-title {
-//       top: 40%;
-//       left: 52%;
-//       width: 570px;
+@media (max-width: 768px) {
+  .splash{
+    .page-title {
+      top: 40%;
+      left: 52%;
+      width: 570px;
 
-//       .page__title {
-//         letter-spacing: 7vw; 
-//         font-size: 14vw;
-//       }
+      .page__title {
+        letter-spacing: 7vw; 
+        font-size: 14vw;
+      }
 
-//       .page__subtitle {
-//         width: 570px;
-//         letter-spacing: 0.8vw; 
-//         left: 47%;
-//         margin-top: 100px; 
+      .page__subtitle {
+        width: 570px;
+        letter-spacing: 0.8vw; 
+        left: 47%;
+        margin-top: 100px; 
   
-//         h2 {
-//           font-size: 4vw; 
-//           margin: 16px 0;
-//         }
-//       }
-//     }
-//   }
+        h2 {
+          font-size: 4vw; 
+          margin: 16px 0;
+        }
+      }
+    }
+  }
 
-//   .main-nav {
-//     .container {
-//       .row {
-//         max-width: 577px;
+  .main-nav {
+    .container {
+      .row {
+        max-width: 577px;
       
-//         a {
-//           font-size: 20px;
-//           letter-spacing: 2px;
-//         }
-//       }
-//     }
-//   }
+        a {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
 
-//   .green-audio-player {
-//     width: 380px;
-//     height: 40px;
-//   }
+  .green-audio-player {
+    width: 380px;
+    height: 40px;
+  }
   
-//   .player-audio {
-//     .song-description {
-//       letter-spacing: 3px;
-//       font-size: 25px;
-//     }
+  .player-audio {
+    .song-description {
+      letter-spacing: 3px;
+      font-size: 25px;
+    }
   
-//     .row {
-//       text-align: left;
+    .row {
+      text-align: left;
   
-//       .categories {
-//         font-size: 14px;
-//         padding-left: 24px;
-//       }
-//     }
-//   }
-// }
+      .categories {
+        font-size: 14px;
+        padding-left: 24px;
+      }
+    }
+  }
+}
 
 @media (max-width: 576px) {
   .splash{

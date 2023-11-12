@@ -126,102 +126,102 @@ li:not(:last-child)::after {
   content: ',';
 }
 
-// @media (max-width: 768px) {
-//   .image-author {
-//     top: 50%;
-//     right: 10%;
-//     max-width: 230px;
-//     padding: 0;
+@media (max-width: 768px) {
+  .image-author {
+    top: 50%;
+    right: 10%;
+    max-width: 230px;
+    padding: 0;
 
   
-//     img {
-//       max-width: 100%;
-//       height: auto;
-//     }
-//   }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-//   .name-author {
-//     top: 66%;
-//     right: 310px;
-//     font-size: 72.2px;
-//     letter-spacing: 10px;
+  .name-author {
+    top: 66%;
+    right: 310px;
+    font-size: 72.2px;
+    letter-spacing: 10px;
   
-//     .surname{
-//       right: -165px;
-//     }
-//   }
+    .surname{
+      right: -165px;
+    }
+  }
 
-//   .button-join {
-//     right: 10%;
-//     top: 36%;
-//     padding: 0;
-//     width: 106px;
+  .button-join {
+    right: 10%;
+    top: 36%;
+    padding: 0;
+    width: 106px;
 
-//     .btn {
-//       width: 106px;
-//       padding: 8px;
-//       font-size: 16px;
-//       letter-spacing: 2px;
-//     }
-//   }
+    .btn {
+      width: 106px;
+      padding: 8px;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+  }
 
-//   .sub-title {
-//     top: -6%;
-//     letter-spacing: 12px;
-//     padding: 0;
-//     left: 0;
+  .sub-title {
+    top: -6%;
+    letter-spacing: 12px;
+    padding: 0;
+    left: 0;
   
-//     h2 {
-//       font-size: 8vw;
+    h2 {
+      font-size: 8vw;
 
-//       span{
-//         font-size: 9vw;
-//       }
-//     }
-//   }
+      span{
+        font-size: 9vw;
+      }
+    }
+  }
 
-//   .description{
-//     top: 18%;
-//     right: 8%;
-//     padding-right: 10px;
-//     padding-left: 0;
-//     font-size: 22px;
-//     letter-spacing: 8px;
+  .description{
+    top: 18%;
+    right: 8%;
+    padding-right: 10px;
+    padding-left: 0;
+    font-size: 22px;
+    letter-spacing: 8px;
     
-//     .new-album {
-//       font-size: 25px;
-//     }
-//   }
+    .new-album {
+      font-size: 25px;
+    }
+  }
 
-//   .footer .container {
-//     margin-bottom: 0;
-//     letter-spacing: 2px;
-//     font-size: 10px;
-//   }
+  .footer .container {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
 
-//   .container {
-//     margin-bottom: 50px;
-//   }
+  .container {
+    margin-bottom: 50px;
+  }
 
-//   .song-categories-filters {
-//     //display: block;
-//     max-width: 577px;
-//     letter-spacing: 1px;
+  .song-categories-filters {
+    //display: block;
+    max-width: 577px;
+    letter-spacing: 1px;
 
-//     p {
-//       font-size: 14px;
-//       
-//     }
-//     li {
-//       margin-right: 2px;
-//       padding-left: 5px;
+    p {
+      font-size: 14px;
+      
+    }
+    li {
+      margin-right: 2px;
+      padding-left: 5px;
 
-//       a {
-//         font-size: 14px;
-//       }
-//     }
-//   }
-// }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
 
 @media (max-width: 576px) {
   .image-author {
