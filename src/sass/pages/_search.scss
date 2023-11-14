@@ -6,7 +6,7 @@
 
     h2 {
       font-family: $mainFontSemiBold;
-      font-size: 40px;
+      font-size: 38px;
       letter-spacing: 7px;
     }
   }
@@ -34,89 +34,89 @@
 
   .search-result-amount{
     font-family: $mainFontSemiBold;
-    font-size: 23px;
+    font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 50px;
   }
 }
-@media (max-width: 768px) {
-    .search-wrapper {
-    padding-right: 12px;
-    padding-left: 12px;
+// @media (max-width: 1200px) {
+//   .search-wrapper {
+//     padding-right: 12px;
+//     padding-left: 12px;
 
-    .title {
-      h2 {
-        font-size: 5vw;
-        letter-spacing: 2vw;
-      }
-    }
+//     .title {
+//       h2 {
+//         font-size: 5vw;
+//         letter-spacing: 2vw;
+//       }
+//     }
   
-    .row {
-      margin-bottom: 50px;
+//     .row {
+//       margin-bottom: 50px;
       
-      .name {
-        p {
-          font-size: 23px;
-          letter-spacing: 3px;
-        }
-      }
+//       .name {
+//         p {
+//           font-size: 23px;
+//           letter-spacing: 3px;
+//         }
+//       }
 
-      .form-control{
-        width: 90%;
-      }
+//       .form-control{
+//         width: 90%;
+//       }
   
-      .btn {
-        font-size: 15px;
-        width: 110px;
-        padding: 4px;
-        letter-spacing: 3px;
-      }
-    }
+//       .btn {
+//         font-size: 15px;
+//         width: 110px;
+//         padding: 4px;
+//         letter-spacing: 3px;
+//       }
+//     }
   
-    .search-result-amount{
-      font-size: 20px;
-      letter-spacing: 4px;
-    }
-  }
-}
+//     .search-result-amount{
+//       font-size: 20px;
+//       letter-spacing: 4px;
+//     }
+//   }
+// }
 
-@media (max-width: 576px) {
-  .search-wrapper {
-    padding-right: 12px;
-    padding-left: 12px;
+// @media (max-width: 576px) {
+//   .search-wrapper {
+//     padding-right: 12px;
+//     padding-left: 12px;
 
-    .title {
-      h2 {
-        font-size: 6vw;
-        letter-spacing: 2vw;
-      }
-    }
+//     .title {
+//       h2 {
+//         font-size: 6vw;
+//         letter-spacing: 2vw;
+//       }
+//     }
   
-    .row {
-      margin-bottom: 50px;
+//     .row {
+//       margin-bottom: 50px;
       
-      .name {
-        p {
-          font-size: 23px;
-          letter-spacing: 3px;
-        }
-      }
+//       .name {
+//         p {
+//           font-size: 23px;
+//           letter-spacing: 3px;
+//         }
+//       }
 
-      .form-control{
-        width: 90%;
-      }
+//       .form-control{
+//         width: 90%;
+//       }
   
-      .btn {
-        font-size: 14px;
-        width: 80px;
-        padding: 4px;
-        letter-spacing: 3px;
-      }
-    }
+//       .btn {
+//         font-size: 14px;
+//         width: 80px;
+//         padding: 4px;
+//         letter-spacing: 3px;
+//       }
+//     }
   
-    .search-result-amount{
-      font-size: 20px;
-      letter-spacing: 4px;
-    }
-  }
-}
+//     .search-result-amount{
+//       font-size: 20px;
+//       letter-spacing: 4px;
+//     }
+//   }
+// }

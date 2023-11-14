@@ -6,47 +6,50 @@
 
     h2 {
       font-family: $mainFontSemiBold;
-      font-size: 40px;
+      font-size: 38px;
       letter-spacing: 7px;
       // margin-bottom: 50;
     }
 
     h6 {
       font-family: $mainFontSemiBold;
-      font-size: 22px;
-      letter-spacing: 5px;
+      font-size: 18px;
+      letter-spacing: 7px;
       margin-bottom: 50px;
-    }
-  }
-}
-@media (max-width: 768px) {
-  .discover-wrapper {
-    .title{
-      h2 {
-        font-size: 5vw;
-      }
-  
-      h6 {
-        font-size: 2.5vw;
-        letter-spacing: 7px;
-        margin-top: 20px;
-      }
+      margin-top: 50px;
     }
   }
 }
 
-@media (max-width: 576px) {
-  .discover-wrapper {
-    .title{
-      h2 {
-        font-size: 6vw;
-        letter-spacing: 2vw;
-      }
+
+// @media (max-width: 1200px) {
+//   .discover-wrapper {
+//     .title{
+//       h2 {
+//         font-size: 5vw;
+//       }
   
-      h6 {
-        font-size: 3vw;
-        letter-spacing: 7px;
-      }
-    }
-  }
-}
+//       h6 {
+//         font-size: 2.5vw;
+//         letter-spacing: 7px;
+//         margin-top: 20px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 576px) {
+//   .discover-wrapper {
+//     .title{
+//       h2 {
+//         font-size: 6vw;
+//         letter-spacing: 2vw;
+//       }
+  
+//       h6 {
+//         font-size: 3vw;
+//         letter-spacing: 7px;
+//       }
+//     }
+//   }
+// }

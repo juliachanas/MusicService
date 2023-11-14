@@ -58,21 +58,21 @@
 
         <div class="subscribe">
           <div class="splash">
-            <div class="row">
-              <div class="col-3 button-join">
+            <div class="row one">
+              <div class="col button-join">
                 <a href="/join-us" class="btn btn-danger btn-lg"> join now </a>
               </div>
-              <div class="col-4 name-author">
+              <div class="col name-author">
                 <div class="name"><p>dean</p></div>
                 <div class="surname">
                   <p>hen<span>son</span></p>
                 </div>
               </div>
-              <div class="col-5 py-0 image-author">
+              <div class="col py-0 image-author">
                 <img src="images/artist.jpg" alt="image" />
               </div>
             </div>
-            <div class="row">
+            <div class="row two">
               <div class="col-12 description">
                 <div class="new-album">
                   <p class="text-end mb-8">new album</p>
@@ -126,15 +126,15 @@
             <source src="./songs/{{filename}}" type="audio/mpeg" />
           </audio>
         </div>
-        <div class="row w-100 py-20">
-          <div class="categories col-7">
+        <div class="row w-100  justify-content-around text-start">
+          <div class="categories col-7 col-lg-6">
             <p>Categories: <span>
               {{#each categories}}
                 {{this}}{{#unless @last}}, {{/unless}}
               {{/each}}
             </span>
           </div>
-          <div class="categories col-5">
+          <div class="categories col-5 col-lg-5">
             <p>#{{ranking}} in the ranking</p>
           </div>
         </div>
