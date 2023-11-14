@@ -22,34 +22,15 @@
 }
 
 
-// @media (max-width: 1200px) {
-//   .discover-wrapper {
-//     .title{
-//       h2 {
-//         font-size: 5vw;
-//       }
-  
-//       h6 {
-//         font-size: 2.5vw;
-//         letter-spacing: 7px;
-//         margin-top: 20px;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 576px) {
-//   .discover-wrapper {
-//     .title{
-//       h2 {
-//         font-size: 6vw;
-//         letter-spacing: 2vw;
-//       }
-  
-//       h6 {
-//         font-size: 3vw;
-//         letter-spacing: 7px;
-//       }
-//     }
-//   }
-// }
+@media (max-width: 576px){
+  .discover-wrapper {
+    .title{
+      h2 {
+        font-size: 34px;
+      }
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+}
