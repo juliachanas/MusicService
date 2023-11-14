@@ -506,4 +506,31 @@ li:not(:last-child)::after {
       right: -8%;
     }
   }
+  .song-categories-filters {
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .name-author {
+    right: 0;
+
+    .surname{
+      width: 100px;
+      right: 61%;
+    }
+  }
+
+  .button-join {
+    right: 50%;
+    top: 82%;
+  }
+  .sub-title{
+    padding:0;
+}
+  .song-categories-filters {
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
 }
