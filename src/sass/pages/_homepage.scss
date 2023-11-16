@@ -1,10 +1,5 @@
-//STYLE DLA PODSTRONY HOMEPAGE
-
-
-//SUBSCRIBE SECTION
 .subscribe .splash {
   background-image: url('../../images/subscribe.jpg');
-  //pozycja relative dziedziczona z splash z layoutu
 
   .row.one {
     position: relative;
@@ -19,7 +14,6 @@
   }
 }
 
-//AUTHOR IMAGE
 .image-author {
   position: absolute;
   width: 25%;
@@ -109,8 +103,6 @@
   letter-spacing: 2px;
 }
 
-//KATEGORIE - STYLE
-
 .song-categories-filters{
   display: flex;
   text-align: left;
@@ -137,14 +129,13 @@
       padding-left: 2px;
 
       a {
-        text-decoration: none; /* Usuwa podkreślenie */
-        color: inherit; /* Dziedziczy kolor z rodzica (jeśli jest) */
+        text-decoration: none;
+        color: inherit;
       }
     }
   }
 }
 
-//usunięcie ostatniego przecinka z kategorii
 li:not(:last-child)::after {
   content: ',';
 }
@@ -156,7 +147,7 @@ li:not(:last-child)::after {
 
   .name-author {
     right: 34.3%;
-    font-size: 5.5vw; //85px;
+    font-size: 5.5vw;
     letter-spacing: 15px;
   
     .surname{
@@ -213,7 +204,6 @@ li:not(:last-child)::after {
   }
 
   .description{
-    // top: 74%;
     right: 12%;
   }
 
@@ -473,7 +463,6 @@ li:not(:last-child)::after {
 
   .description{
     top: 64%;
-    // right: 15%;
     font-size: 22px;
     letter-spacing: 6px;
   }
